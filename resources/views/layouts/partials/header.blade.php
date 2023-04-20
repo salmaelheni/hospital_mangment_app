@@ -55,9 +55,18 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
+          @guest
           <li class="nav-item">
-            <a class="btn btn-primary ml-lg-3" href="#">Login / Register</a>
+              <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Login</a>
           </li>
+          <li class="nav-item">
+              <a class="btn btn-primary ml-lg-3" href="{{ route('register-user') }}">Register</a>
+          </li>
+          @else
+          <li class="nav-item">
+              <a class="btn btn-primary ml-lg-3" href="{{ route('signout') }}">Logout</a>
+          </li>
+          @endguest
         </ul>
       </div> <!-- .navbar-collapse -->
     </div> <!-- .container -->

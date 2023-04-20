@@ -8,9 +8,9 @@
   <div class="page-hero bg-image overlay-dark" style="background-image: url(../assets/img/bg_image_1.jpg);">
     <div class="hero-section">
       <div class="container text-center wow zoomIn">
-        <span class="subhead">Let's make your life happier</span>
-        <h1 class="display-4">Healthy Living</h1>
-        <a href="#" class="btn btn-primary">Let's Consult</a>
+        <span class="subhead">{{ trans('index.subhead') }}</span>
+        <h1 class="display-4">{{ trans('index.subhead-1') }}</h1>
+        <a href="#" class="btn btn-primary">{{ trans('index.btn-subhead') }}</a>
       </div>
     </div>
   </div>
@@ -86,7 +86,7 @@
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   </div>
